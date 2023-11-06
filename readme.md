@@ -8,7 +8,7 @@ manually switching each icon in taskbar settings.
 
 ## Using
 
-Two run modes:
+**Two run modes:**
 
 1) Run this script without any arguments and it will reveal all hidden Tray
    icons.
@@ -19,7 +19,7 @@ Two run modes:
 ```
    toggle-tray-icons-win11.cmd some_blahblah_argument
 ```
-Scenario of use:
+**Scenario of use:**
 
 Run it every time you installed several programs having tray icons to show them
 all or hide them all.
