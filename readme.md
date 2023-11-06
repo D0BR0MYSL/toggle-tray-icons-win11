@@ -2,11 +2,13 @@
 
 ## Purpose
 
-A simple utility script to toggle quickly visibility of Tray Icons for those
-who prefer to hide all or show all tray icons at once, instead of manually
-toggling each icon in taskbar settings.
+A simple utility script for quick toggle Tray Icons on Windows 11 Taskbar.
+For those who prefer to hide all or show all tray icons at once, instead of
+manually switching each icon in taskbar settings.
 
 ## Using
+
+Two run modes:
 
 1) Run this script without any arguments and it will reveal all hidden Tray
    icons.
@@ -17,6 +19,10 @@ toggling each icon in taskbar settings.
 ```
    toggle-tray-icons-win11.cmd some_blahblah_argument
 ```
+Scenario of use:
+
+Run it every time you installed several programs having tray icons to show them
+all or hide them all.
 
 ## Requirements
 
@@ -27,7 +33,7 @@ Windows 11 (any edition, any build).
 If you are not familiar with Github yet, just hit the green "Code" button at
 the top right corner of this page and choose "Download ZIP" option.
 
-Then unpack downloaded .zip archive anywhere you want and run. 
+Then unpack downloaded .zip archive anywhere you want and run.
 
 ## About source code
 
