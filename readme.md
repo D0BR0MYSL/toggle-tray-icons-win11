@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A simple utility script for quick toggle Tray Icons on Windows 11 Taskbar.
+A simple utility script for quick toggling Tray Icons on Windows 11 Taskbar.
 For those who prefer to hide all or show all tray icons at once, instead of
 manually switching each icon in taskbar settings.
 
