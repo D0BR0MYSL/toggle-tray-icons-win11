@@ -11,8 +11,7 @@ toggling each icon in taskbar settings.
 1) Run this script without any arguments and it will reveal all hidden Tray
    icons.
 
-1) Run this script with any argument (any text) and it will hide all hidden
-   Tray icons.
+1) Run this script with any argument (any text) and it will hide all Tray icons
    
    Example:
 ```
