@@ -13,6 +13,11 @@ toggling each icon in taskbar settings.
 
 1) Run this script with any argument (any text) and it will hide all hidden
    Tray icons.
+   
+   Example:
+```
+   toggle-tray-icons-win11.cmd some_blahblah_argument
+```
 
 ## Requirements
 
