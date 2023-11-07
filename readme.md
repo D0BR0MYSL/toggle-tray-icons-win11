@@ -8,8 +8,6 @@ manually switching each icon in taskbar settings.
 
 ## Using
 
-**Using:**
-
 ![Alt Text](https://i.imgur.com/nQZrBbx.gif)
 
 1) Run this script without any arguments and it will reveal all hidden Tray
