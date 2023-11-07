@@ -1,6 +1,6 @@
 # toggle-tray-icons-win11
 ![Platform](https://img.shields.io/static/v1?label=platform&message=windows11&color=blue&style=flat)
-![type](https://img.shields.io/static/v1?label=type&message=bathfile&color=darkyellow&style=flat)
+![type](https://img.shields.io/static/v1?label=type&message=bathfile&color=yellow&style=flat)
 
 ## Purpose
 
