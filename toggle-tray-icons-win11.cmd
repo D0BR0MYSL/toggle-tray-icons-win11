@@ -2,7 +2,8 @@
 rem Windows 11 Tray Icons visibility toggle
 
 rem getting current Windows UI language
-for /f "tokens=3" %%a in ('reg query "HKCU\Control Panel\Desktop" /v PreferredUILanguages ^| find "PreferredUILanguages"') do set UILanguage=%%a
+for /f "tokens=3" %%a in ('reg query "HKLM\SYSTEM\CONTROLSET001\CONTROL\NLS\Language" /v Installlanguage') do set UILanguage=%%a
+if %UILanguage%=="" set UILanguage=0409
 
 rem declaring an extended types for variables to use it for incrementing numerical values  
 @setlocal enabledelayedexpansion
@@ -17,7 +18,7 @@ if [%1]==[] (
 
 cls
 @echo.
-if %UILanguage%==ru-RU (
+if %UILanguage%==0419 (
 	@echo  Переключение видимости значков в области уведомлений...
 	@echo.
 	rem using "^" symbol to represent brackets as text instead of logical scope
@@ -49,7 +50,7 @@ for /f "tokens=1-2" %%a in ('reg query "HKEY_USERS\%usersid%\Control Panel\Notif
 
 @echo.
 @echo.
-if %UILanguage%==ru-RU (
+if %UILanguage%==0419 (
 	@echo  Готово.
 ) else (
 	@echo  Done.
