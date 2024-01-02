@@ -1,9 +1,16 @@
 @echo off
+
 rem Windows 11 Tray Icons visibility toggle
 
 rem getting current Windows UI language
 for /f "tokens=3" %%a in ('reg query "HKLM\SYSTEM\CONTROLSET001\CONTROL\NLS\Language" /v Installlanguage') do set UILanguage=%%a
 if %UILanguage%=="" set UILanguage=0409
+
+if %UILanguage%==0419 (
+	chcp 1251 >nul 2>&1
+) else (
+	chcp 65001 >nul 2>&1
+)
 
 rem declaring an extended types for variables to use it for incrementing numerical values  
 @setlocal enabledelayedexpansion
@@ -19,10 +26,10 @@ if [%1]==[] (
 cls
 @echo.
 if %UILanguage%==0419 (
-	@echo  Переключение видимости значков в области уведомлений...
+	@echo  ╨Я╨╡╤А╨╡╨║╨╗╤О╤З╨╡╨╜╨╕╨╡ ╨▓╨╕╨┤╨╕╨╝╨╛╤Б╤В╨╕ ╨╖╨╜╨░╤З╨║╨╛╨▓ ╨▓ ╨╛╨▒╨╗╨░╤Б╤В╨╕ ╤Г╨▓╨╡╨┤╨╛╨╝╨╗╨╡╨╜╨╕╨╣...
 	@echo.
 	rem using "^" symbol to represent brackets as text instead of logical scope
-	@echo  ^(чтобы скрыть значки, задайте абсолютной любой параметр запуска^)
+	@echo  ^(╤З╤В╨╛╨▒╤Л ╤Б╨║╤А╤Л╤В╤М ╨╖╨╜╨░╤З╨║╨╕, ╨╖╨░╨┤╨░╨╣╤В╨╡ ╨░╨▒╤Б╨╛╨╗╤О╤В╨╜╨╛╨╣ ╨╗╤О╨▒╨╛╨╣ ╨┐╨░╤А╨░╨╝╨╡╤В╤А ╨╖╨░╨┐╤Г╤Б╨║╨░^)
 ) else (
 	@echo  Switching visibility of Tray icons...
 	@echo.
@@ -51,7 +58,7 @@ for /f "tokens=1-2" %%a in ('reg query "HKEY_USERS\%usersid%\Control Panel\Notif
 @echo.
 @echo.
 if %UILanguage%==0419 (
-	@echo  Готово.
+	@echo  ╨У╨╛╤В╨╛╨▓╨╛.
 ) else (
 	@echo  Done.
 )
